@@ -1,0 +1,12 @@
+dcs_dbtmodel_v1:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      method: token
+      host: dbc-74ef42a2-1239.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/9bb7dcd8650fda84
+      catalog: dcs-demo-txn
+      schema: default
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      threads: 4

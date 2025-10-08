@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: bronze
+    catalog: dcs-demo-txn
+    schema: bronze_dlt
+    tables:
+      - name: bronze_card_product_info
+      - name: bronze_country_code
+      - name: bronze_posted_transaction
+      - name: bronze_transaction_code
+      - name: bronze_currency_code
+      - name: bronze_mcc_list
