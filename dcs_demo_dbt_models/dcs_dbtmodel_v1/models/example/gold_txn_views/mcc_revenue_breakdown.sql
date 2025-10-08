@@ -1,5 +1,5 @@
 {{ config(
-    schema='gold_txn',
+    schema='dcs_gold_txn',
     materialized = 'view',
     tags=['gold']
 ) }}

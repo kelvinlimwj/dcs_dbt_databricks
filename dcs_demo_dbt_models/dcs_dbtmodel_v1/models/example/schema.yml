@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: bronze
     catalog: dcs-demo-txn
-    schema: bronze_dlt
+    schema: dcs_bronze_txn_staging
     tables:
       - name: bronze_card_product_info
       - name: bronze_country_code

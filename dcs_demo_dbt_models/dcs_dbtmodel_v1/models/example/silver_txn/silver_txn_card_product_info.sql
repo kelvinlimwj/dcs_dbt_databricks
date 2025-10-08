@@ -1,5 +1,6 @@
 {{ config(
-    schema='silver_txn',
+    schema='dcs_silver_txn',
+    materialized = 'table',
     tags=['silver']
 ) }}
 
