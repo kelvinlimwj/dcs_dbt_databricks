@@ -11,3 +11,23 @@ sources:
       - name: bronze_transaction_code
       - name: bronze_currency_code
       - name: bronze_mcc_list
+
+models:
+  - name: silver_txn_retail_posted_transaction
+    description: "Cleaned and standardized retail posted transactions (silver layer)."
+    columns:
+      - name: posted_transaction_id
+        description: "Unique identifier for each posted transaction."
+        tests:
+          - unique
+          - not_null
+
+      - name: country_code
+        description: "Numeric or alpha country code associated with the transaction."
+        tests:
+          - not_null
+
+      - name: mcc
+        description: "Merchant category code used for classification."
+        tests:
+          - not_null
